@@ -1,0 +1,114 @@
+@import '/vendor/filament/filament/resources/css/theme.css';
+
+@config 'tailwind.config.js';
+
+/** Auth */
+.fi-simple-main {
+    @apply bg-transparent shadow-none ring-0 sm:!max-w-md;
+}
+
+.fi-simple-header {
+    @apply items-start;
+}
+
+/** Sidebar */
+.fi-sidebar-header {
+    @apply bg-transparent dark:!bg-transparent !shadow-none ring-0;
+}
+
+.fi-sidebar-nav {
+    @apply -mx-6;
+}
+
+.fi-sidebar-nav-groups {
+    @apply mx-0;
+}
+
+.fi-sidebar-group {
+    @apply border-b dark:border-gray-800 pb-7;
+}
+
+.fi-sidebar-group:last-child {
+    @apply border-none;
+}
+
+.fi-sidebar-group-button {
+    @apply px-6;
+}
+
+.fi-sidebar-item {
+    @apply border-l-4 border-transparent hover:border-gray-100 dark:hover:border-white/5;
+}
+
+.fi-sidebar-item:hover > .fi-sidebar-item-button {
+    @apply bg-gray-100 dark:bg-white/5;
+}
+
+.fi-sidebar-item-active {
+    @apply border-primary-600 hover:border-primary-600 dark:hover:border-primary-600;
+}
+
+.fi-sidebar-item-button {
+    @apply pl-5 pr-6 rounded-none;
+}
+
+.fi-sidebar-item-active > .fi-sidebar-item-button {
+    @apply bg-transparent;
+}
+
+.fi-user-menu {
+    @apply mx-6;
+}
+
+/** Top navigation */
+.fi-topbar {
+    @apply lg:hidden;
+}
+
+.fi-topbar .fi-user-menu {
+    @apply hidden;
+}
+
+/** Main page */
+.fi-main-ctn {
+    @apply bg-white shadow-sm ring-1 ring-gray-950/5 dark:bg-gray-900 dark:ring-white/10;
+}
+
+/** Buttons */
+.fi-btn {
+    @apply rounded-full px-4;
+}
+
+/** Widgets */
+.fi-wi-stats-overview-stats-ctn {
+    @apply gap-0;
+}
+
+.fi-wi-stats-overview-stat {
+    @apply rounded-none ring-gray-200;
+}
+
+.fi-wi-stats-overview-stats-ctn > .fi-wi-stats-overview-stat:first-child {
+    @apply rounded-l-lg;
+}
+
+.fi-wi-stats-overview-stats-ctn > .fi-wi-stats-overview-stat:last-child {
+    @apply rounded-r-lg;
+}
+
+/** Tables */
+.fi-ta-ctn {
+    @apply rounded-none shadow-none ring-0 divide-none;
+}
+
+.fi-ta-selection-indicator {
+    @apply bg-transparent dark:!bg-gray-900;
+}
+
+.fi-ta-table th {
+    @apply bg-transparent dark:!bg-gray-900;
+}
+
+.fi-ta-table > thead > tr {
+    @apply bg-transparent;
+}
