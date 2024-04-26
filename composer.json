@@ -1,11 +1,10 @@
 {
-    "name": "laravel/laravel",
+    "name": "red-explosion/budget-dashboard",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
-    "license": "MIT",
+    "description": "An open-source personal budgeting system. Keep track of all your expenses without worrying about privacy.",
+    "license": "proprietary",
     "require": {
-        "php": "^8.2",
+        "php": "^8.3",
         "calebporzio/sushi": "^2.5",
         "filament/filament": "^3.2",
         "laravel/framework": "^11.0",
