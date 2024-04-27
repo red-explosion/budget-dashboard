@@ -3,12 +3,12 @@
 namespace App\Models;
 
 use App\Casts\Pence;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use RedExplosion\Sqids\Concerns\HasSqids;
 
 class Income extends Model
 {
-    use HasFactory;
+    use HasSqids;
 
     /**
      * Get the attributes that should be cast.
