@@ -81,19 +81,19 @@
 
 /** Widgets */
 .fi-wi-stats-overview-stats-ctn {
-    @apply gap-0;
+    @apply md:gap-0;
 }
 
 .fi-wi-stats-overview-stat {
-    @apply rounded-none ring-gray-200;
+    @apply md:rounded-none ring-gray-200;
 }
 
 .fi-wi-stats-overview-stats-ctn > .fi-wi-stats-overview-stat:first-child {
-    @apply rounded-l-lg;
+    @apply md:rounded-l-lg;
 }
 
 .fi-wi-stats-overview-stats-ctn > .fi-wi-stats-overview-stat:last-child {
-    @apply rounded-r-lg;
+    @apply md:rounded-r-lg;
 }
 
 /** Tables */
