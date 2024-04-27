@@ -50,7 +50,7 @@ php artisan migrate
 Finally, build the frontend assets by running the following:
 
 ```shell
-nom run watch
+nom run build
 ```
 
 Depending on your server, you will also need to configure Nginx or Apache to point to this new site.
