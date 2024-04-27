@@ -2,6 +2,9 @@
     <img src="./.github/header.png" width="1280" alt="Budget Dashboard">
 </p>
 
+> [!WARNING]  
+> This product is actively being developed and a stable version hasn't yet been released.
+
 ## Introduction
 
 Budget Dashboard is a simple personal/household budgeting system built with privacy in mind. Budget dashboard allows
