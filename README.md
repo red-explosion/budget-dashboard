@@ -39,7 +39,7 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-Be sure to also configure your database details.
+Be sure to also configure any other environment variables such as your database credentials.
 
 Next run the migrations:
 
