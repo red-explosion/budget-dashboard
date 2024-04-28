@@ -1,9 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\IncomeResource\Pages;
-use App\Filament\Resources\IncomeResource\RelationManagers;
 use App\Models\Income;
 use App\Support\Money;
 use Filament\Forms;
@@ -11,8 +12,6 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class IncomeResource extends Resource
 {
@@ -56,7 +55,7 @@ class IncomeResource extends Resource
                     ->formatStateUsing(fn (float $state): string => Money::format(amount: $state)),
             ])
             ->filters([
-                //
+
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
@@ -71,7 +70,7 @@ class IncomeResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+
         ];
     }
 

@@ -1,9 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Filament\Pages;
 
 use Filament\Pages\Dashboard as FilamentDashboard;
-use Illuminate\Contracts\Support\Htmlable;
 
 class Dashboard extends FilamentDashboard
 {

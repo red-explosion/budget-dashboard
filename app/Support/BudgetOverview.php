@@ -40,7 +40,7 @@ class BudgetOverview
 
         $income = Income::get();
 
-        $income->map(function (Income $income) {
+        $income->map(function (Income $income): void {
             $this->addItem($income->name, $income->amount);
         });
 
@@ -54,7 +54,7 @@ class BudgetOverview
         $categories = Category::get();
         $expenses = Expense::get();
 
-        $categories->each(function (Category $category) use ($expenses) {
+        $categories->each(function (Category $category) use ($expenses): void {
             $categoryExpenses = $expenses->where('category_id', $category->id);
 
             if ($categoryExpenses->isEmpty()) {
@@ -63,7 +63,7 @@ class BudgetOverview
 
             $this->addItem($category->name, heading: true);
 
-            $categoryExpenses->each(function (Expense $expense) {
+            $categoryExpenses->each(function (Expense $expense): void {
                 $this->addItem($expense->name, $expense->amount);
             });
 
@@ -75,7 +75,7 @@ class BudgetOverview
 
             $expensesWithoutCategory = $expenses->whereNull('category_id');
 
-            $expensesWithoutCategory->each(function (Expense $expense) {
+            $expensesWithoutCategory->each(function (Expense $expense): void {
                 $this->addItem($expense->name, $expense->amount);
             });
 
