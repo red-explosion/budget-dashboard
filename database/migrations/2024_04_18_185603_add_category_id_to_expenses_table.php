@@ -19,14 +19,4 @@ return new class extends Migration
                 ->constrained()->nullOnDelete();
         });
     }
-
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        Schema::table('expenses', function (Blueprint $table): void {
-
-        });
-    }
 };
