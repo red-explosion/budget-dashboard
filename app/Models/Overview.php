@@ -12,6 +12,10 @@ class Overview extends Model
 {
     use Sushi;
 
+    protected array $schema = [
+        'amount' => 'float',
+    ];
+
     public function getRows(): array
     {
         return BudgetOverview::make()->toArray();
