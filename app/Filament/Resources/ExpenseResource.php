@@ -1,9 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\ExpenseResource\Pages;
-use App\Filament\Resources\ExpenseResource\RelationManagers;
 use App\Models\Expense;
 use App\Support\Money;
 use Filament\Forms;
@@ -11,8 +12,6 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class ExpenseResource extends Resource
 {
@@ -45,7 +44,7 @@ class ExpenseResource extends Resource
                             ->relationship('category', 'name')
                             ->preload()
                             ->columnStart(1),
-                    ])
+                    ]),
             ]);
     }
 
@@ -81,7 +80,7 @@ class ExpenseResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+
         ];
     }
 

@@ -1,10 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Filament\Resources\IncomeResource\Widgets;
 
 use App\Filament\Widgets\Stats\TotalIncomeStat;
 use Filament\Widgets\StatsOverviewWidget as BaseWidget;
-use Filament\Widgets\StatsOverviewWidget\Stat;
 
 class TotalIncome extends BaseWidget
 {
