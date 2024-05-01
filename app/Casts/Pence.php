@@ -26,6 +26,8 @@ class Pence implements CastsAttributes
      */
     public function set(Model $model, string $key, mixed $value, array $attributes): int
     {
-        return $value * 100;
+        $value = (float) $value * 100;
+
+        return (int) round($value, precision: 2);
     }
 }
